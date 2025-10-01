@@ -4,42 +4,42 @@
 # By listing them here we can keep tabs on which ones are failing and be sure
 # that we don't introduce regressions in other tests.
 
-Recommended.FieldMaskNumbersDontRoundTrip.JsonOutput
-Recommended.FieldMaskPathsDontRoundTrip.JsonOutput
-Recommended.FieldMaskTooManyUnderscore.JsonOutput
-Recommended.JsonInput.BoolFieldAllCapitalFalse
-Recommended.JsonInput.BoolFieldAllCapitalTrue
-Recommended.JsonInput.BoolFieldCamelCaseFalse
-Recommended.JsonInput.BoolFieldCamelCaseTrue
-Recommended.JsonInput.BoolFieldDoubleQuotedFalse
-Recommended.JsonInput.BoolFieldDoubleQuotedTrue
-Recommended.JsonInput.BoolMapFieldKeyNotQuoted
-Recommended.JsonInput.DoubleFieldInfinityNotQuoted
-Recommended.JsonInput.DoubleFieldNanNotQuoted
-Recommended.JsonInput.DoubleFieldNegativeInfinityNotQuoted
-Recommended.JsonInput.FieldMaskInvalidCharacter
-Recommended.JsonInput.FieldNameDuplicate
-Recommended.JsonInput.FieldNameNotQuoted
-Recommended.JsonInput.FloatFieldInfinityNotQuoted
-Recommended.JsonInput.FloatFieldNanNotQuoted
-Recommended.JsonInput.FloatFieldNegativeInfinityNotQuoted
-Recommended.JsonInput.Int32MapFieldKeyNotQuoted
-Recommended.JsonInput.Int64MapFieldKeyNotQuoted
-Recommended.JsonInput.JsonWithComments
-Recommended.JsonInput.StringFieldSingleQuoteBoth
-Recommended.JsonInput.StringFieldSingleQuoteKey
-Recommended.JsonInput.StringFieldSingleQuoteValue
-Recommended.JsonInput.StringFieldSurrogateInWrongOrder
-Recommended.JsonInput.StringFieldUnpairedHighSurrogate
-Recommended.JsonInput.StringFieldUnpairedLowSurrogate
-Recommended.JsonInput.Uint32MapFieldKeyNotQuoted
-Recommended.JsonInput.Uint64MapFieldKeyNotQuoted
-Required.JsonInput.EnumFieldNotQuoted
-Required.JsonInput.Int32FieldLeadingZero
-Required.JsonInput.Int32FieldNegativeWithLeadingZero
-Required.JsonInput.Int32FieldPlusSign
-Required.JsonInput.RepeatedFieldWrongElementTypeExpectingStringsGotBool
-Required.JsonInput.RepeatedFieldWrongElementTypeExpectingStringsGotInt
-Required.JsonInput.StringFieldNotAString
-Required.ProtobufInput.PrematureEofInDelimitedDataForKnownNonRepeatedValue.MESSAGE
-Required.ProtobufInput.PrematureEofInDelimitedDataForKnownRepeatedValue.MESSAGE
+Recommended.*.JsonInput.BoolFieldAllCapitalFalse                                                                   # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.BoolFieldAllCapitalTrue                                                                    # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.BoolFieldCamelCaseFalse                                                                    # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.BoolFieldCamelCaseTrue                                                                     # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.BoolFieldDoubleQuotedFalse                                                                 # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.BoolFieldDoubleQuotedTrue                                                                  # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.BoolMapFieldKeyNotQuoted                                                                   # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.DoubleFieldInfinityNotQuoted                                                               # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.DoubleFieldNanNotQuoted                                                                    # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.DoubleFieldNegativeInfinityNotQuoted                                                       # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.FieldNameDuplicate                                                                         # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.FieldNameExtension.Validator                                                               # Expected JSON payload but got type 1
+Recommended.*.JsonInput.FieldNameNotQuoted                                                                         # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.FloatFieldInfinityNotQuoted                                                                # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.FloatFieldNanNotQuoted                                                                     # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.FloatFieldNegativeInfinityNotQuoted                                                        # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.Int32MapFieldKeyNotQuoted                                                                  # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.Int64MapFieldKeyNotQuoted                                                                  # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.JsonWithComments                                                                           # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.StringFieldSingleQuoteBoth                                                                 # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.StringFieldSingleQuoteKey                                                                  # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.StringFieldSingleQuoteValue                                                                # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.StringFieldSurrogateInWrongOrder                                                           # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.StringFieldUnpairedHighSurrogate                                                           # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.StringFieldUnpairedLowSurrogate                                                            # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.Uint32MapFieldKeyNotQuoted                                                                 # Should have failed to parse, but didn't.
+Recommended.*.JsonInput.Uint64MapFieldKeyNotQuoted                                                                 # Should have failed to parse, but didn't.
+Recommended.*.FieldMaskNumbersDontRoundTrip.JsonOutput                                                             # Should have failed to serialize, but didn't.
+Recommended.*.FieldMaskPathsDontRoundTrip.JsonOutput                                                               # Should have failed to serialize, but didn't.
+Recommended.*.FieldMaskTooManyUnderscore.JsonOutput                                                                # Should have failed to serialize, but didn't.
+Recommended.*.JsonInput.FieldMaskInvalidCharacter                                                                  # Should have failed to parse, but didn't.
+Required.*.JsonInput.EnumFieldNotQuoted                                                                            # Should have failed to parse, but didn't.
+Required.*.JsonInput.Int32FieldLeadingZero                                                                         # Should have failed to parse, but didn't.
+Required.*.JsonInput.Int32FieldNegativeWithLeadingZero                                                             # Should have failed to parse, but didn't.
+Required.*.JsonInput.Int32FieldPlusSign                                                                            # Should have failed to parse, but didn't.
+Required.*.JsonInput.RepeatedFieldWrongElementTypeExpectingStringsGotBool                                          # Should have failed to parse, but didn't.
+Required.*.JsonInput.RepeatedFieldWrongElementTypeExpectingStringsGotInt                                           # Should have failed to parse, but didn't.
+Required.*.JsonInput.StringFieldNotAString                                                                         # Should have failed to parse, but didn't.
+Required.*.ProtobufInput.UnknownOrdering.ProtobufOutput                                                            # Unknown field mismatch
